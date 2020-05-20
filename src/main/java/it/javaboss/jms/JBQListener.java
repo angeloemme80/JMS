@@ -13,7 +13,7 @@ import javax.ejb.MessageDriven;
 public class JBQListener implements MessageListener {
     public void onMessage(Message message) {
         try {
-            System.out.println( "Dentro JBQListener metodo onMessage: " + message.getBody( String.class ) );
+            System.out.println( "Listener JBQListener metodo onMessage: " + message.getBody( String.class ) );
         } catch (JMSException e) {
             e.printStackTrace();
         }
